@@ -8,9 +8,14 @@ This app is designed both for English and Hebrew speakers, and is used to learn 
 
 Link to Google play store will be available soon.
 
-## Usage example
+Clone this repository: `https://github.com/Birkagal/AlgoCube.git`
 
-Small guide to the app will be added soon.
+![installing1](https://i.ibb.co/crrfnGs/1.png)
+
+Paste link in URL and choose Directory.
+
+![installing2](https://i.ibb.co/RQx61bx/2.png)
+
 
 ## Release History
 
@@ -23,13 +28,7 @@ Gal Birka – birkagal@gmail.com
 
 Distributed under the Apache License 2.0 license. See ``LICENSE`` for more information.
 
-## Contributing
-
-1. Fork it (<https://github.com/birkagal/AlgoCube/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
 <!-- Markdown link & img dfn's -->
 [algocube-logo]: https://ibb.co/bR7x617
+[installing1]: https://i.ibb.co/crrfnGs/1.png
+[installing2]: https://i.ibb.co/RQx61bx/2.png
