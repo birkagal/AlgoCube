@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Activity_LearnMenu">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/learn_menu_btn_learn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_learn3"
+            android:fontFamily="@font/staatliches"
+            android:text="@string/learn3"
+            android:textColor="@color/green"
+            android:textSize="52sp" />
+
+        <Button
+            android:id="@+id/learn_menu_btn_learn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_learn2"
+            android:fontFamily="@font/staatliches"
+            android:text="@string/learn2"
+            android:textColor="@color/sea_blue"
+            android:textSize="52sp" />
+
+    </LinearLayout>
+</RelativeLayout>

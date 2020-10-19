@@ -3,4 +3,17 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#8A8A8A</color>
+    <color name="red">#D50000</color>
+    <color name="logo_yellow">#FDD833</color>
+    <color name="logo_red">#ed6d66</color>
+    <color name="logo_blue">#5bd0fc</color>
+    <color name="background_color">#8EAAFB</color>
+    <color name="magenta">#8C0031</color>
+    <color name="sea_blue">#06557B</color>
+    <color name="green">#089D17</color>
+    <color name="pink">#F34E4E</color>
+
 </resources>

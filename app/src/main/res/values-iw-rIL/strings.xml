@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AlgoCube</string>
+    <string name="left_hand">שמאל</string>
+    <string name="right_hand">ימין</string>
+    <string name="reset">אפס ושמור</string>
+    <string name="learn">לימוד</string>
+    <string name="timer">טיימר</string>
+    <string name="stats">סטטיסטיקה</string>
+    <string name="home">מסך הבית</string>
+    <string name="log_out">התנתק</string>
+    <string name="average_time">ממוצע פתרונות:</string>
+    <string name="best_time">פתרון שיא:</string>
+    <string name="clear_solves">מחק נתונים</string>
+    <string name="info">מתחילים</string>
+    <string name="about">נעשה על ידי גל בירקה</string>
+    <string name="learn3">לימוד 3X3</string>
+    <string name="learn2">לימוד 2X2</string>
+</resources>

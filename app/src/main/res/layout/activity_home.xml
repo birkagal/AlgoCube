@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Activity_Home">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/home_btn_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_learn"
+            android:fontFamily="@font/staatliches"
+            android:text="@string/learn"
+            android:textColor="@color/magenta"
+            android:textSize="46sp" />
+
+        <Button
+            android:id="@+id/home_btn_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_timer"
+            android:fontFamily="@font/staatliches"
+            android:text="@string/timer"
+            android:textColor="@color/pink"
+            android:textSize="46sp" />
+
+        <Button
+            android:id="@+id/home_btn_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_stats"
+            android:fontFamily="@font/staatliches"
+            android:text="@string/stats"
+            android:textColor="@color/sea_blue"
+            android:textSize="46sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_txt_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/staatliches"
+        android:text="@string/about"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+</RelativeLayout>

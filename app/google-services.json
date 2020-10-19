@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "118084717031",
+    "firebase_url": "https://algocube-birka-gal.firebaseio.com",
+    "project_id": "algocube-birka-gal",
+    "storage_bucket": "algocube-birka-gal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118084717031:android:401f89981b88cfec195542",
+        "android_client_info": {
+          "package_name": "com.birkagal.algocube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118084717031-ro0m6j5bh230q5l2ooplrsvilkkol40l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.birkagal.algocube",
+            "certificate_hash": "62311af0d7af62378bd78632a88cecb1bbf6584a"
+          }
+        },
+        {
+          "client_id": "118084717031-ej20230uu5phfdaboscalcfqmbj652jq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9E8e8fU1QAQP2wSjdHtbz_qTpNOOr5N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118084717031-ej20230uu5phfdaboscalcfqmbj652jq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

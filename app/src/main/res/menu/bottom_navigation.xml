@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_oll"
+        android:icon="@drawable/ic_oll"
+        android:title="@string/oll" />
+
+    <item
+        android:id="@+id/nav_pll"
+        android:icon="@drawable/ic_pll"
+        android:title="@string/pll" />
+
+    <item
+        android:id="@+id/nav_beginner"
+        android:icon="@drawable/ic_beginner"
+        android:title="@string/beginner" />
+
+    <item
+        android:id="@+id/nav_notation"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/info" />
+
+</menu>
