@@ -4,6 +4,16 @@
 Android app I'm making under Mobile Application academic course.
 This app is designed both for English and Hebrew speakers, and is used to learn and practice rubiks cube algorithms.
 
+## The App
+
+This app has several features and is integrated with Firebase servers.
+
+![eng1](https://i.ibb.co/pXN0wWj/en1.png)  ![eng2](https://i.ibb.co/hD01XFv/en2.png)  ![eng3](https://i.ibb.co/hmGmkM2/en3.png)
+
+The app is also available for Hebrew speakers
+
+![il1](https://i.ibb.co/K2wVVzh/il1.png)  ![il2](https://i.ibb.co/K9P7Hxw/il2.png)  ![il3](https://i.ibb.co/48dVssr/en1.png)
+
 ## Installation
 
 Link to Google play store will be available soon.
