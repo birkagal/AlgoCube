@@ -13,7 +13,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.gson.reflect.TypeToken;
+
 import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
 
 public class Activity_Timer extends AppCompatActivity {
 
@@ -25,8 +29,7 @@ public class Activity_Timer extends AppCompatActivity {
     private Runnable updateTimerThread;
     private boolean isTimerOn = false, isRight = false, isLeft = false, isFinished = false, isReset = true;
     private long startTime = 0L, timeInMilli = 0L;
-    private final SolveDB mSolveDB = SolveDB.getInstance();
-
+    private ArrayList<Solve> solves;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -36,6 +39,7 @@ public class Activity_Timer extends AppCompatActivity {
 
         findViews();
         threadTimer();
+        get_array_from_sp();
 
         timer_btn_left.setOnTouchListener(bottomTouchListener);
         timer_btn_right.setOnTouchListener(bottomTouchListener);
@@ -54,7 +58,8 @@ public class Activity_Timer extends AppCompatActivity {
             stopTimer();
         } else {
             if (timeInMilli != 0) {
-                mSolveDB.uploadSolve(timeInMilli);
+                solves.add(new Solve(timeInMilli));
+                MySP.getInstance().putArray(MySP.KEYS.USER_SOLVE_LIST, solves);
             }
         }
         timeInMilli = 0L;
@@ -74,7 +79,7 @@ public class Activity_Timer extends AppCompatActivity {
 
     private void updateTimer() {
         timeInMilli = SystemClock.uptimeMillis() - startTime;
-        String formattedTime = mSolveDB.getFormattedTime(timeInMilli);
+        String formattedTime = MySP.getInstance().getFormattedTime(timeInMilli);
         timer_txt_time.setText(formattedTime);
     }
 
@@ -155,6 +160,13 @@ public class Activity_Timer extends AppCompatActivity {
     private void stopTimer() {
         isTimerOn = false;
         timer_handler.removeCallbacks(updateTimerThread);
+    }
+
+    private void get_array_from_sp() {
+        solves = MySP.getInstance().getArray(MySP.KEYS.USER_SOLVE_LIST, new TypeToken<ArrayList<Solve>>() {
+        });
+        if (solves == null)
+            solves = new ArrayList<>();
     }
 
     private void findViews() {

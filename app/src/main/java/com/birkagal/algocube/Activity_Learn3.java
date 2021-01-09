@@ -28,15 +28,12 @@ public class Activity_Learn3 extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment selectedFragment = null;
-
             int id = item.getItemId();
 
             if (id == R.id.nav_oll) {
                 selectedFragment = new OLLFragment();
-
             } else if (id == R.id.nav_pll) {
                 selectedFragment = new PLLFragment();
-
             } else if (id == R.id.nav_beginner) {
                 selectedFragment = new BeginnerFragment();
             } else if (id == R.id.nav_notation) {

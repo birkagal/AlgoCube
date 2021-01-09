@@ -17,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 
 public class Activity_Splash extends AppCompatActivity {
 
-    private final int ANIMATION_DURATION = 3000;
     private TextView main_txt_name;
     private ImageView main_img_logo;
     private boolean isAnimDone = false;
@@ -40,6 +39,7 @@ public class Activity_Splash extends AppCompatActivity {
     }
 
     private void animate(@NotNull final View view, float height, float rotation) {
+        int ANIMATION_DURATION = 3000;
         view.setScaleX(0.0f);
         view.setScaleY(0.0f);
         view.setAlpha(0.0f);
@@ -73,7 +73,7 @@ public class Activity_Splash extends AppCompatActivity {
 
     private void startApp() {
         if (isAnimDone) {
-            startActivity(new Intent(Activity_Splash.this, Activity_Login.class));
+            startActivity(new Intent(Activity_Splash.this, Activity_Home.class));
             finish();
         } else {
             isAnimDone = true;

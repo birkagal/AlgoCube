@@ -58,6 +58,6 @@
         android:fontFamily="@font/staatliches"
         android:text="@string/about"
         android:textColor="@color/colorPrimary"
-        android:textSize="24sp" />
+        android:textSize="16sp" />
 
 </RelativeLayout>

@@ -13,6 +13,7 @@ import com.anychart.chart.common.dataentry.DataEntry;
 import com.anychart.chart.common.dataentry.ValueDataEntry;
 import com.anychart.charts.Cartesian;
 import com.anychart.core.cartesian.series.Column;
+import com.google.gson.reflect.TypeToken;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -24,13 +25,10 @@ public class Activity_Stats extends AppCompatActivity {
 
     AnyChartView anyChartView;
     private ArrayList<Solve> solves;
-    private final SolveDB mSolveDB = SolveDB.getInstance();
     private Cartesian cartesian;
-
     private TextView stats_txt_best_time;
     private TextView stats_txt_avg_time;
     private Button stats_btn_clear;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +36,7 @@ public class Activity_Stats extends AppCompatActivity {
         setContentView(R.layout.activity_stats);
 
         findViews();
-        solves = mSolveDB.getSolves();
+        get_array_from_sp();
         set_labels();
         showChart();
 
@@ -51,8 +49,8 @@ public class Activity_Stats extends AppCompatActivity {
     }
 
     private void buttonClicked() {
-        mSolveDB.clearSolves();
         solves = new ArrayList<>();
+        MySP.getInstance().putArray(MySP.KEYS.USER_SOLVE_LIST, solves);
         cartesian.data(formatData());
         set_labels();
     }
@@ -76,7 +74,7 @@ public class Activity_Stats extends AppCompatActivity {
         if (solves.isEmpty())
             return "N/A";
         Long average = calculateAverage(list);
-        return mSolveDB.getFormattedTime(average);
+        return MySP.getInstance().getFormattedTime(average);
     }
 
     private Long calculateAverage(@NotNull ArrayList<Solve> list) {
@@ -125,6 +123,13 @@ public class Activity_Stats extends AppCompatActivity {
             }
         }
         return data;
+    }
+
+    private void get_array_from_sp() {
+        solves = MySP.getInstance().getArray(MySP.KEYS.USER_SOLVE_LIST, new TypeToken<ArrayList<Solve>>() {
+        });
+        if (solves == null)
+            solves = new ArrayList<>();
     }
 
     private void findViews() {

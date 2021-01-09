@@ -14,7 +14,6 @@ public class Activity_LearnMenu extends AppCompatActivity {
 
     private Button learn_menu_btn_learn3, learn_menu_btn_learn2;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +23,9 @@ public class Activity_LearnMenu extends AppCompatActivity {
 
         learn_menu_btn_learn3.setOnClickListener(bottomClickListener);
         learn_menu_btn_learn2.setOnClickListener(bottomClickListener);
-
     }
 
-    private View.OnClickListener bottomClickListener = new View.OnClickListener() {
+    private final View.OnClickListener bottomClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             bottomClicked(view);
