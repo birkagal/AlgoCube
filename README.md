@@ -4,6 +4,8 @@
 Android app I'm making under Mobile Application academic course.
 This app is designed both for English and Hebrew speakers, and is used to learn and practice rubiks cube algorithms.
 
+Check out the app on the [Google Play Store](https://play.google.com/store/apps/details?id=com.birkagal.algocube)
+
 ## The App
 
 This app has several features and is integrated with Firebase servers.
@@ -12,11 +14,9 @@ This app has several features and is integrated with Firebase servers.
 
 The app is also available for Hebrew speakers
 
-![il1](https://i.ibb.co/K2wVVzh/il1.png)  ![il2](https://i.ibb.co/K9P7Hxw/il2.png)  ![il3](https://i.ibb.co/48dVssr/en1.png)
+![il2](https://i.ibb.co/K9P7Hxw/il2.png)  ![il3](https://i.ibb.co/48dVssr/en1.png)
 
 ## Installation
-
-Link to Google play store will be available soon.
 
 Clone this repository: `https://github.com/Birkagal/AlgoCube.git`
 
